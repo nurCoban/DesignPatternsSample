@@ -1,25 +1,18 @@
-﻿using FactoryPattern;
-using System;
+﻿using System;
 
-namespace demo
+namespace FactoryPattern
 {
-    class Program
+    class Demo
     {
         static void Main(string[] args)
         {
-            #region FactoryPattern
-
             var smsNotificationService = NotificationFactory.Create(NotificationType.SMS);
             smsNotificationService.Notify();
 
             var emailNotificationService = NotificationFactory.Create(NotificationType.EMAIL);
             emailNotificationService.Notify();
 
-            #endregion
-
-
             Console.ReadLine();
-
         }
     }
 }
