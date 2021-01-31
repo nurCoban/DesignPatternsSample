@@ -26,11 +26,31 @@ Use Factory Pattern;
 
 Use Observer Pattern;
 
->When the change of a state in one object affects other objects 
+>When the change of a state in one event affects other objects 
 
 | Pros  |Cons   |
 |---|---|
 |Open/Closed Principle.(when you want additional observers you don't need to change the subject's code)|The order of notifying observers is random|
+
+<br>
+
+## Mediator Pattern
+
+Use Mediator Pattern;
+
+>When you want to reduce the relationship between a set of objects
+
+>When the complexity of object interaction begins to hold up object reusability
+
+>When changes in the state of one object affects many other objects.
+
+| Pros  |Cons   |
+|---|---|
+|Low coupling.(a component only depends on the mediator. It makes a many-to-many interaction a one-to-many interaction.)|God object!(when over used)|
+|Increases reusability.||
+|Open/Closed Principle.(you can add more objects, that communicate with others, without any change.)||
+|Single Responsibility.(removes the communication from objects into a single place)||
+
 <br>
 
 # Structural Patterns
