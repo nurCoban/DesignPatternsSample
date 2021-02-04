@@ -44,12 +44,37 @@ Use Mediator Pattern;
 
 >When changes in the state of one object affects many other objects.
 
+
+
 | Pros  |Cons   |
 |---|---|
 |Low coupling.(a component only depends on the mediator. It makes a many-to-many interaction a one-to-many interaction.)|God object!(when over used)|
 |Increases reusability.||
 |Open/Closed Principle.(you can add more objects, that communicate with others, without any change.)||
 |Single Responsibility.(removes the communication from objects into a single place)||
+
+<br>
+
+## Strategy Pattern
+
+Use Strategy Pattern;
+
+>When you want to use different kinds of algorithm within an object and be able to switch algorithms in runtime.(for example: saving files in different formats.)
+
+>When you have similar classes, and the only difference between those classes is the way they run algorithm.
+
+<br>
+
+<img width="554" alt="strategy" src="https://user-images.githubusercontent.com/24756631/106932880-51e1ba80-6729-11eb-9bea-a77460149399.png">
+
+<br>
+
+| Pros  |Cons   |
+|---|---|
+|Algorithms(strategies) can be swaped at runtime.| Clients must know of the differences between strategies to select.|
+|Composition over inheritance.|Strategy and Context classes may be tightly coupled. The Context must supply the relevant data to the Strategy.|
+|Open/Closed Principle.(you can add new strategies without changing the Context)||
+
 
 <br>
 
